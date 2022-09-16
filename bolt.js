@@ -14,4 +14,7 @@ app.message(/hello/i, ({message, say}) => {
   say('こんにちは！');
 });
 
-app.start();
+(async () => {
+  await app.start();
+  console.log('⚡️ Bolt app started');
+})();
